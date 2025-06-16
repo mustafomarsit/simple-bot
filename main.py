@@ -2,8 +2,9 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+import os
 
-bot = Bot("7576094811:AAGAdEkJX-Pl14d0NjY8_5mSQWwVh3rIFnE")
+bot = Bot(os.getenv("BOT_TOKEN"))
 dp = Dispatcher()
 
 # Tugmalar
@@ -38,7 +39,7 @@ async def about_handler(message: types.Message):
         "💻 Yo‘nalish: Python (Backend), Aiogram\n"
         "📅 Boshlangan sana: 2025-yil\n"
         "🎯 Maqsad: Kuchli backend dasturchi bo‘lish\n"
-        "📱 Aloqa: @tolibjonov_mustafo"
+        "📱 Aloqa: @tol1bjono_v"
     )
 
 
