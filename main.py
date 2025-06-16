@@ -1,8 +1,12 @@
 import asyncio
+import os
+
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 bot = Bot(os.getenv("BOT_TOKEN"))
 dp = Dispatcher()
